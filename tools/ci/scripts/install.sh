@@ -1,0 +1,2 @@
+cd ../../source
+composer install
