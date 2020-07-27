@@ -42,8 +42,8 @@ class geoController extends AbstractController
      */
     public function index(Request $request)
     {
-        dd($_SERVER, $request->server->get('CF-Connecting-IP'));
-        $ip = $request->get('ip',$request->server->get('CF-Connecting-IP'));
+
+        $ip = $request->get('ip',$request->getClientIp());
         if(is_null($ip) || empty($ip) || !(filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4))){
             return new JsonResponse([
                 'status' => self::STATUS_FAILED,
