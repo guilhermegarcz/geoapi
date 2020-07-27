@@ -1,7 +1,6 @@
 server {
     listen       80;
-    server_name  geoapi.dev;
-	client_max_body_size 20M;
+    server_name  geoapi.app www.geoapi.app;
 
     root   /usr/share/nginx/website/public;
     index  index.html index.htm index.php;
