@@ -92,10 +92,10 @@ class UpdateIp2locationCommand extends Command
                     $zip->close();
 
                     $from = sprintf('%s/downloads/temp/IP2LOCATION-LITE-DB11.BIN', $this->ip2location_path);
-                    $to = sprintf('%s/IP2LOCATION-LITE-DB3.BIN',$this->ip2location_path);
+                    $to = sprintf('%s/IP2LOCATION-LITE-DB11.BIN',$this->ip2location_path);
                     if(str_contains($db, 'IPV6')){
                         $from = sprintf('%s/downloads/temp/IP2LOCATION-LITE-DB11.IPV6.BIN',$this->ip2location_path);
-                        $to = sprintf('%s/IP2LOCATION-LITE-DB3.IPV6.BIN',$this->ip2location_path);
+                        $to = sprintf('%s/IP2LOCATION-LITE-DB11.IPV6.BIN',$this->ip2location_path);
                     }
 
                     if(rename($from, $to) === false){
