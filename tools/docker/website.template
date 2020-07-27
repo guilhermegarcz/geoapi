@@ -1,6 +1,6 @@
 server {
-    listen       80 default;
-    server_name  _;
+    listen       80;
+    server_name  geoapi.dev;
 	client_max_body_size 20M;
 
     root   /usr/share/nginx/website/public;
