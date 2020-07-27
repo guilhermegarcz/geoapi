@@ -1,5 +1,5 @@
 server {
-    listen       80;
+    listen       80 default;
     server_name  geoapi.app www.geoapi.app;
 
     root   /usr/share/nginx/website/public;
